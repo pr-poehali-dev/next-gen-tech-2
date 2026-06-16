@@ -8,6 +8,8 @@ import { AISection } from "./AISection"
 import { ProductDirectionSection } from "./ProductDirectionSection"
 import { WorkflowsSection } from "./WorkflowsSection"
 import { CTASection } from "./CTASection"
+import { PricingSection } from "./PricingSection"
+import { TestimonialsSection } from "./TestimonialsSection"
 import { Footer } from "./Footer"
 
 export function Hero3DStage() {
@@ -79,9 +81,14 @@ export function Hero3DStage() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="mt-8 flex items-center gap-6"
               >
-                <button className="px-5 py-2.5 bg-white text-zinc-900 font-medium rounded-lg hover:bg-zinc-100 transition-colors text-sm">
+                <a
+                  href={`https://t.me/cyxabo?text=${encodeURIComponent("Запись на курс — хочу узнать подробнее о тарифах. Формат: онлайн + куратор, 1 месяц.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 bg-white text-zinc-900 font-medium rounded-lg hover:bg-zinc-100 transition-colors text-sm"
+                >
                   Записаться на курс
-                </button>
+                </a>
                 <button className="text-zinc-300 font-medium hover:text-white transition-colors flex items-center gap-2 text-sm">
                   <span className="text-zinc-500">Новый поток:</span> старт обучения уже открыт
                   <span aria-hidden="true">→</span>
@@ -164,6 +171,8 @@ export function Hero3DStage() {
           <AISection />
           <ProductDirectionSection />
           <WorkflowsSection />
+          <TestimonialsSection />
+          <PricingSection />
           <CTASection />
           <Footer />
         </div>

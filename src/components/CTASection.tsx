@@ -7,12 +7,22 @@ export function CTASection() {
             Начни зарабатывать на трафике уже в этом месяце.
           </h2>
           <div className="flex items-center gap-3">
-            <button className="px-5 py-2.5 border border-zinc-700 text-white font-medium rounded-lg hover:bg-zinc-800 transition-colors text-sm">
+            <a
+              href={`https://t.me/cyxabo?text=${encodeURIComponent("Хочу узнать подробнее о курсе по арбитражу трафика. Формат: онлайн + куратор, 1 месяц.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 border border-zinc-700 text-white font-medium rounded-lg hover:bg-zinc-800 transition-colors text-sm"
+            >
               Узнать подробнее
-            </button>
-            <button className="px-5 py-2.5 bg-white text-zinc-900 font-medium rounded-lg hover:bg-zinc-100 transition-colors text-sm">
+            </a>
+            <a
+              href={`https://t.me/cyxabo?text=${encodeURIComponent("Запись на курс — хочу узнать подробнее о тарифах. Формат: онлайн + куратор, 1 месяц.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 bg-white text-zinc-900 font-medium rounded-lg hover:bg-zinc-100 transition-colors text-sm"
+            >
               Записаться на курс
-            </button>
+            </a>
           </div>
         </div>
       </div>
