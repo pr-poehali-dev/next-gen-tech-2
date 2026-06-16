@@ -6,6 +6,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { ExitPopup } from "@/components/ExitPopup";
+import { FloatingCTA } from "@/components/FloatingCTA";
 
 const queryClient = new QueryClient();
 
@@ -14,6 +16,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <ExitPopup />
+      <FloatingCTA />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />

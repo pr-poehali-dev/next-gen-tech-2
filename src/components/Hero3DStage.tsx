@@ -10,6 +10,8 @@ import { WorkflowsSection } from "./WorkflowsSection"
 import { CTASection } from "./CTASection"
 import { PricingSection } from "./PricingSection"
 import { TestimonialsSection } from "./TestimonialsSection"
+import { StatsSection } from "./StatsSection"
+import { FAQSection } from "./FAQSection"
 import { Footer } from "./Footer"
 
 export function Hero3DStage() {
@@ -166,6 +168,7 @@ export function Hero3DStage() {
             </div>
           </div>
 
+          <StatsSection />
           <LogoCloud />
           <FeatureCardsSection />
           <AISection />
@@ -173,6 +176,7 @@ export function Hero3DStage() {
           <WorkflowsSection />
           <TestimonialsSection />
           <PricingSection />
+          <FAQSection />
           <CTASection />
           <Footer />
         </div>
