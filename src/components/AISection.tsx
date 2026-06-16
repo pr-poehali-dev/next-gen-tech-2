@@ -2,12 +2,12 @@ import { motion } from "framer-motion"
 import { ChevronRight, Check, Paperclip, Globe, Lightbulb } from "lucide-react"
 
 const agents = [
-  { name: "Cursor", isAgent: true, selected: true, icon: "◇" },
-  { name: "GitHub Copilot", isAgent: true, selected: false, icon: "◉" },
-  { name: "Sentry", isAgent: true, selected: false, icon: "◈" },
-  { name: "Leela", isAgent: false, selected: false, icon: "○" },
-  { name: "Codex", isAgent: true, selected: false, icon: "◎" },
-  { name: "Conor", isAgent: false, selected: false, icon: "○" },
+  { name: "Личный куратор", isAgent: true, selected: true, icon: "◇" },
+  { name: "Разбор связок", isAgent: true, selected: false, icon: "◉" },
+  { name: "Чат потока", isAgent: true, selected: false, icon: "◈" },
+  { name: "Созвоны 1-на-1", isAgent: false, selected: false, icon: "○" },
+  { name: "Проверка ДЗ", isAgent: true, selected: false, icon: "◎" },
+  { name: "Поддержка 24/7", isAgent: false, selected: false, icon: "○" },
 ]
 
 export function AISection() {
@@ -31,7 +31,7 @@ export function AISection() {
             className="flex items-center gap-2 mb-6"
           >
             <div className="w-2 h-2 rounded-full bg-blue-500" />
-            <span className="text-zinc-400 text-sm">Искусственный интеллект</span>
+            <span className="text-zinc-400 text-sm">Наставничество и поддержка</span>
             <ChevronRight className="w-4 h-4 text-zinc-500" />
           </motion.div>
 
@@ -49,7 +49,7 @@ export function AISection() {
               lineHeight: 1.1,
             }}
           >
-            Разработка с ИИ-помощником
+            Личный наставник на каждом шаге
           </motion.h2>
 
           {/* Description */}
@@ -60,8 +60,8 @@ export function AISection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-zinc-400 max-w-md mb-8"
           >
-            <span className="text-white font-medium">Orbit для агентов.</span> Выбирайте из множества ИИ-агентов и
-            делегируйте задачи: от генерации кода до других технических задач.
+            <span className="text-white font-medium">Не оставим один на один.</span> Кураторы разберут твои связки,
+            помогут с настройкой рекламы и подскажут, как выйти в плюс быстрее.
           </motion.p>
 
           {/* Learn more button */}
@@ -177,7 +177,7 @@ export function AISection() {
                             {agent.name}
                           </span>
                           {agent.isAgent && (
-                            <span className="text-xs bg-zinc-700 text-zinc-400 px-2 py-0.5 rounded">Агент</span>
+                            <span className="text-xs bg-zinc-700 text-zinc-400 px-2 py-0.5 rounded">Куратор</span>
                           )}
                         </div>
                         {agent.selected && <Check className="w-4 h-4 text-zinc-400" />}
@@ -200,9 +200,9 @@ export function AISection() {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left column */}
               <div className="border-t border-r border-b border-zinc-800/60 pt-12 pr-12 pb-16">
-                <h3 className="text-zinc-200 font-medium text-xl mb-3">Автопилот для продукта</h3>
+                <h3 className="text-zinc-200 font-medium text-xl mb-3">Разбор связок под тебя</h3>
                 <p className="text-zinc-500 text-base mb-8">
-                  Оптимизируйте рабочие процессы с ИИ-ассистентом для рутинных и ручных задач.
+                  Куратор подскажет, какие офферы лить и где найти прибыльную аудиторию.
                 </p>
 
                 {/* Triage Intelligence Card */}
@@ -255,9 +255,9 @@ export function AISection() {
                       <span className="text-zinc-300 text-sm font-medium">nan</span>
                     </div>
 
-                    <p className="text-zinc-500 text-xs mb-2">Почему этот исполнитель</p>
+                    <p className="text-zinc-500 text-xs mb-2">Почему этот оффер</p>
                     <p className="text-zinc-500 text-sm mb-4">
-                      Этот человек работал над похожими задачами, связанными с производительностью мобильного приложения
+                      Этот оффер уже показал высокую окупаемость у других учеников потока
                     </p>
 
                     <p className="text-zinc-500 text-xs mb-2">Альтернативы</p>
@@ -282,9 +282,9 @@ export function AISection() {
 
               {/* Right column */}
               <div className="border-t border-b border-zinc-800/60 pt-12 pl-12 pb-16">
-                <h3 className="text-zinc-200 font-medium text-xl mb-3">Orbit MCP</h3>
+                <h3 className="text-zinc-200 font-medium text-xl mb-3">Закрытый чат потока</h3>
                 <p className="text-zinc-500 text-base mb-8">
-                  Подключите Orbit к любимым инструментам: Cursor, Claude, ChatGPT и другим.
+                  Общайся с другими арбитражниками, делись связками и задавай вопросы в любое время.
                 </p>
 
                 {/* MCP Code Snippet */}

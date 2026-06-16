@@ -3,7 +3,7 @@ import { ChevronRight, Plus } from "lucide-react"
 
 const featureCards = [
   {
-    title: "Планирование спринтов",
+    title: "Связки и офферы",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-lg">
         <svg
@@ -51,7 +51,7 @@ const featureCards = [
     ),
   },
   {
-    title: "Управление итерациями",
+    title: "Запуск рекламы и масштаб",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
         <img
@@ -64,7 +64,7 @@ const featureCards = [
     ),
   },
   {
-    title: "Когда важна точность",
+    title: "Аналитика и окупаемость",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
         <img
@@ -105,7 +105,7 @@ export function FeatureCardsSection() {
                 lineHeight: 1.1,
               }}
             >
-              Создан для современных команд
+              Всё, что нужно для старта в арбитраже
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -115,10 +115,10 @@ export function FeatureCardsSection() {
               className="max-w-md"
             >
               <p className="text-zinc-400 leading-relaxed">
-                Orbit основан на практиках и принципах, которые отличают лучшие продуктовые команды:
-                фокус на главном, быстрое исполнение и внимание к качеству.{" "}
+                Программа построена на реальной практике, которая приводит учеников к первым выплатам:
+                рабочие связки, запуск рекламы и аналитика без воды.{" "}
                 <a href="#" className="text-white inline-flex items-center gap-1 hover:underline">
-                  Перейти на Orbit <ChevronRight className="w-4 h-4" />
+                  Смотреть программу <ChevronRight className="w-4 h-4" />
                 </a>
               </p>
             </motion.div>
