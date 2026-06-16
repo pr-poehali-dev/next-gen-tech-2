@@ -4,50 +4,50 @@ import { ChevronLeft, ChevronRight, Plus, ArrowRight, MessageSquare, GitBranch, 
 const carouselCards = [
   {
     id: 1,
-    category: "Запросы клиентов",
-    title: "Создавайте то, что нужно клиентам",
+    category: "Финансовые офферы",
+    title: "Лей на финки и получай процент с депозита",
     icon: ArrowRight,
     mockup: "intercom",
   },
   {
     id: 2,
-    category: "Git-интеграция",
-    title: "Автоматизируйте PR и коммиты",
+    category: "TikTok трафик",
+    title: "Органика и платная реклама в TikTok",
     icon: Plus,
     mockup: "github",
   },
   {
     id: 3,
-    category: "Orbit Mobile",
-    title: "Управляйте работой откуда угодно",
+    category: "Мобильный арбитраж",
+    title: "Запускай кампании прямо со смартфона",
     icon: ArrowRight,
     mockup: "mobile",
   },
   {
     id: 4,
-    category: "Orbit Asks",
-    title: "Превращайте запросы в задачи",
+    category: "Крео и воронки",
+    title: "Создавай конвертящие объявления и лендинги",
     icon: ArrowRight,
     mockup: "asks",
   },
   {
     id: 5,
-    category: "Интеграции Orbit",
-    title: "100+ способов расширить возможности",
+    category: "Партнёрские сети",
+    title: "10+ проверенных ПП для старта",
     icon: ArrowRight,
     mockup: "integrations",
   },
   {
     id: 6,
-    category: "Интеграция с Figma",
-    title: "Связь между разработкой и дизайном",
+    category: "Аналитика трафика",
+    title: "Keitaro, Binom и отслеживание ROI",
     icon: ArrowRight,
     mockup: "figma",
   },
   {
     id: 7,
-    category: "Для разработчиков",
-    title: "Создавайте плагины через Orbit API",
+    category: "Масштабирование",
+    title: "Как увеличить бюджет не теряя ROI",
     icon: ArrowRight,
     mockup: "api",
   },
@@ -58,35 +58,35 @@ function IntercomMockup() {
     <div className="flex flex-col gap-3 p-4">
       <div className="flex items-center gap-2 text-xs text-zinc-400">
         <MessageSquare className="w-3.5 h-3.5" />
-        <span>Intercom</span>
+        <span>ПП-чат</span>
         <span className="text-zinc-600">·</span>
-        <span className="text-zinc-500">sarah@example.com</span>
+        <span className="text-zinc-500">оффер@finka.com</span>
       </div>
       <p className="text-sm text-zinc-300">
-        Нужна разбивка затрат <span className="text-zinc-500">по...</span>
+        Новый финоффер — ROI 200%+ <span className="text-zinc-500">при...</span>
       </p>
 
       <div className="mt-2 flex items-center gap-2 bg-zinc-800/50 rounded-lg px-3 py-2">
         <div className="w-5 h-5 bg-zinc-700 rounded flex items-center justify-center">
-          <span className="text-[10px] text-zinc-400">A</span>
+          <span className="text-[10px] text-zinc-400">$</span>
         </div>
-        <span className="text-sm text-zinc-300">ACME</span>
-        <span className="text-xs text-zinc-500">Новый запрос</span>
+        <span className="text-sm text-zinc-300">CPA $45</span>
+        <span className="text-xs text-zinc-500">Новый оффер</span>
       </div>
 
       <div className="mt-1 flex items-center gap-2 bg-zinc-800/30 rounded-lg px-3 py-2">
         <div className="w-5 h-5 bg-yellow-500/20 rounded flex items-center justify-center">
           <span className="text-[10px] text-yellow-500">◆</span>
         </div>
-        <span className="text-sm text-zinc-400">Мультиоблачные</span>
-        <span className="text-xs text-zinc-500">затраты</span>
+        <span className="text-sm text-zinc-400">Финансы</span>
+        <span className="text-xs text-zinc-500">Депозит</span>
       </div>
 
       <div className="mt-1 flex items-center gap-2 px-3 py-2">
         <div className="w-4 h-4 rounded-full border border-zinc-600" />
-        <span className="text-sm text-zinc-500">Планирование</span>
+        <span className="text-sm text-zinc-500">Запуск связки</span>
         <div className="ml-2 flex items-center gap-1 text-xs text-zinc-600">
-          <span>Q4 2025</span>
+          <span>Июль 2025</span>
         </div>
       </div>
     </div>
@@ -243,22 +243,21 @@ export function WorkflowsSection() {
             {/* Orange indicator */}
             <div className="flex items-center gap-2 mb-6">
               <div className="w-2 h-2 rounded-full bg-orange-500" />
-              <span className="text-sm text-zinc-400">Процессы и интеграции</span>
+              <span className="text-sm text-zinc-400">Направления и инструменты</span>
               <ChevronRight className="w-4 h-4 text-zinc-600" />
             </div>
 
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl font-medium text-white leading-[1.1]">
-              Работайте слаженно
+              Все способы
               <br />
-              между инструментами
+              зарабатывать на трафике
             </h2>
           </div>
 
           {/* Description */}
           <p className="text-zinc-400 lg:max-w-sm lg:pt-12">
-            Расширьте возможности Orbit с помощью интеграций, которые синхронизируют всю команду и держат фокус на
-            главном.
+            Финансовые офферы, TikTok, Facebook, Google — выбери своё направление и начни зарабатывать с первого потока.
           </p>
         </div>
 

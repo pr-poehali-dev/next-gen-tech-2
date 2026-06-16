@@ -16,7 +16,7 @@ export function ProductDirectionSection() {
         {/* Section label */}
         <div className="flex items-center gap-2 mb-6">
           <div className="w-3 h-3 rounded-full bg-green-500" />
-          <span className="text-zinc-400 text-sm">Проекты и долгосрочное планирование</span>
+          <span className="text-zinc-400 text-sm">Программа обучения</span>
           <ChevronRight className="w-4 h-4 text-zinc-500" />
         </div>
 
@@ -30,13 +30,12 @@ export function ProductDirectionSection() {
             lineHeight: 1.1,
           }}
         >
-          Задайте направление продукта
+          От нуля до первых выплат за 30 дней
         </h2>
 
         {/* Description */}
         <p className="text-zinc-400 text-lg max-w-md mb-16">
-          <span className="text-white font-medium">Объедините команду вокруг единой дорожной карты.</span> Планируйте,
-          управляйте и отслеживайте все инициативы с помощью визуальных инструментов Orbit.
+          <span className="text-white font-medium">Пошаговый план от практикующих арбитражников.</span> Каждый модуль — конкретный навык: выбор оффера, запуск рекламы, аналитика и масштабирование.
         </p>
 
         {/* 3D Timeline Visualization */}
@@ -124,7 +123,7 @@ export function ProductDirectionSection() {
                 }}
               >
                 <div className="w-4 h-4 rotate-45 bg-zinc-500/60" />
-                <span className="text-zinc-300 text-sm font-medium">Инференс в реальном времени</span>
+                <span className="text-zinc-300 text-sm font-medium">Модуль 1: Выбор оффера и ПП</span>
                 <div
                   className="absolute w-5 h-5 rotate-45 border-2 border-green-500 bg-transparent"
                   style={{ right: "15%", top: "50%", transform: "translateY(-50%) rotate(45deg)" }}
@@ -142,7 +141,7 @@ export function ProductDirectionSection() {
                 }}
               >
                 <div className="w-3 h-3 rotate-45 bg-zinc-600/60" />
-                <span className="text-zinc-500 text-sm">Прототип</span>
+                <span className="text-zinc-500 text-sm">Модуль 2: Крео и лендинги</span>
               </div>
 
               {/* Beta bar */}
@@ -155,7 +154,7 @@ export function ProductDirectionSection() {
                   height: "48px",
                 }}
               >
-                <span className="text-zinc-400 text-sm">Бета</span>
+                <span className="text-zinc-400 text-sm">Модуль 3: Запуск трафика</span>
                 <div className="flex gap-0.5">
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
@@ -173,7 +172,7 @@ export function ProductDirectionSection() {
                   height: "48px",
                 }}
               >
-                <span className="text-zinc-400 text-sm">RLHF-дообучение</span>
+                <span className="text-zinc-400 text-sm">Модуль 4: Аналитика и ROI</span>
                 <div className="flex gap-0.5">
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
@@ -187,13 +186,13 @@ export function ProductDirectionSection() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left column - Manage projects end-to-end */}
           <div className="border-t border-r border-b border-zinc-800 pt-10 pr-10 pb-16">
-            <h3 className="text-xl font-medium text-zinc-200 mb-3">Управляйте проектами от А до Я</h3>
+            <h3 className="text-xl font-medium text-zinc-200 mb-3">Структурированный план обучения</h3>
             <p className="text-zinc-500 text-base leading-relaxed mb-8">
-              Объедините спецификации, этапы, задачи и документацию в одном месте.
+              Видеоуроки, домашние задания и разборы кейсов собраны в одном месте.
             </p>
 
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5">
-              <h4 className="text-lg font-medium text-zinc-200 mb-5">Обзор проекта</h4>
+              <h4 className="text-lg font-medium text-zinc-200 mb-5">Прогресс по курсу</h4>
 
               {/* Properties row */}
               <div className="flex items-center gap-4 mb-4">
@@ -201,13 +200,13 @@ export function ProductDirectionSection() {
                 <div className="flex items-center gap-2">
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-300 text-xs">
                     <span className="w-2 h-2 rounded-full bg-yellow-500" />
-                    В работе
+                    В процессе
                   </span>
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-300 text-xs">
                     <svg className="w-3 h-3" viewBox="0 0 16 16" fill="currentColor">
                       <rect x="2" y="2" width="12" height="12" rx="2" />
                     </svg>
-                    ENG
+                    Арбитраж
                   </span>
                   <div className="flex -space-x-1.5">
                     <div className="w-5 h-5 rounded-full bg-zinc-600 border border-zinc-900" />
@@ -222,10 +221,10 @@ export function ProductDirectionSection() {
                 <span className="text-zinc-500 text-sm w-20">Ресурсы</span>
                 <div className="flex items-center gap-2">
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-300 text-xs">
-                    <span className="text-purple-400">Исследование</span>
+                    <span className="text-purple-400">Видеоуроки</span>
                   </span>
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">
-                    <span className="text-yellow-500">Интервью</span>
+                    <span className="text-yellow-500">Практика</span>
                   </span>
                 </div>
               </div>
@@ -236,15 +235,15 @@ export function ProductDirectionSection() {
                 <div className="flex flex-col gap-2">
                   <span className="flex items-center gap-2 text-zinc-300 text-sm">
                     <span className="w-2.5 h-2.5 rotate-45 bg-purple-500" />
-                    Дизайн-ревью <span className="text-zinc-500">100%</span>
+                    Теория <span className="text-zinc-500">100%</span>
                   </span>
                   <span className="flex items-center gap-2 text-zinc-300 text-sm">
                     <span className="w-2.5 h-2.5 rotate-45 bg-purple-500" />
-                    Внутренняя альфа <span className="text-zinc-500">100% из 10</span>
+                    Первая связка <span className="text-zinc-500">100% из 10</span>
                   </span>
                   <span className="flex items-center gap-2 text-zinc-400 text-sm">
                     <span className="w-2.5 h-2.5 rotate-45 border border-zinc-500 bg-transparent" />
-                    Релиз <span className="text-zinc-500">25% из 53</span>
+                    Масштаб <span className="text-zinc-500">25% из 53</span>
                   </span>
                 </div>
               </div>
@@ -253,9 +252,9 @@ export function ProductDirectionSection() {
 
           {/* Right column - Project updates */}
           <div className="border-t border-b border-zinc-800 pt-10 pl-10 pb-16">
-            <h3 className="text-xl font-medium text-zinc-200 mb-3">Обновления проекта</h3>
+            <h3 className="text-xl font-medium text-zinc-200 mb-3">Результаты учеников</h3>
             <p className="text-zinc-500 text-base leading-relaxed mb-8">
-              Сообщайте о прогрессе и статусе проекта с помощью встроенных отчетов.
+              Реальные кейсы с цифрами — сколько потратили, сколько заработали.
             </p>
 
             <div className="relative h-48">
